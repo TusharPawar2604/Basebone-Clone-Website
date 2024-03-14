@@ -1,0 +1,164 @@
+@font-face {
+    font-family: first;
+    src: url(./63640f262fc5ea0822eb1971_TWKLausanne-400.woff2);
+}
+@font-face {
+    font-family: second;
+    src: url(./65266f51c1a01790836b0d84_Universal\ Sans\ Display\ 876.woff2);
+}
+@font-face {
+    font-family: third;
+    src: url(./65421b9842ee316b29a653fd_BasebornSans.woff2);
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   color: white;
+}
+html,body{
+   height: 100%;
+   width: 100%;
+}
+
+#page1{
+  min-height: 100vh;
+    width: 100%;
+    background-color: rgb(17, 17, 17);
+    /* overflow: hidden; */
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: sticky;
+    z-index: 9;
+    font-family: first;
+}
+nav h2{
+    font-weight: 500;
+}
+#left-nav{
+    display: flex;
+    gap: 25px;
+}
+#bigtext h1{
+    font-family: second;
+    font-size: 278px;
+}
+#left{
+    height: 45vh;
+    width: 50%;
+    font-family: first;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+}
+#left h4{
+    opacity: 0.7;
+    font-size: 14px;
+}
+#left h4 span{
+    font-style: italic;
+}
+#left p{
+    font-weight: 600;
+}
+
+#right{
+   min-height: 100vh; 
+    width: 50%;
+    background-color: rgb(17, 17, 17);
+    position: absolute;
+    right: 0;
+    top: 55%;
+}
+.elems{
+    border-bottom: 1.5px solid rgb(73, 73, 73);
+margin-bottom: 10px;
+}
+.elems #photo{
+    height: 90vh;
+    width: 100%;
+}
+#photo{
+    position: relative;
+}
+#photo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#photo video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#phototext h3{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: second;
+}
+#phototext {
+    padding-left: 20px;
+}
+#phototext p{
+    font-family: first;
+    opacity: 0.7;
+    margin-bottom: 10px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 40px 20px 30px 20px;
+    line-height: 25px;
+    font-family: first;
+}
+#service p{
+   font-size: 12px;
+   font-weight: 400;
+   opacity: 0.7;
+}
+#under{
+height: 500px;
+width: 450px;
+background-color: red;
+position: absolute;
+display: none;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+}
+#under video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#photo:hover #under{
+    display: initial;
+}
+#image{
+    position: absolute;
+    display: none;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+#photo:hover #image{
+    display: initial;
+}
+#video{
+    position: absolute;
+    display: none;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s  ;
+}
+#photo:hover #video{
+    display: initial;
+}
+.mousefollower{
+    scale:2;
+}
